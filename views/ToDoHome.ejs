@@ -87,7 +87,9 @@
                         <!-- Delete Button -->
                         <div class="delete-button">
                             <a href="/delete-todos/?index=<%= i.index %>">
-                                <i class="fa fa-times-circle"> Delete</i>
+                                <i class="fa fa-times-circle">
+                                    <img src="/icons/trash.svg" alt="" />
+                                </i>
                             </a>
                         </div>
                         <!--  -->
@@ -95,14 +97,19 @@
                     <%}%>
                 </div>
             </ul>
-            <form id="new-todos-form" action="/create-todos" method="post">
+            <form
+                class="formz"
+                id="new-todos-form"
+                action="/create-todos"
+                method="post"
+            >
                 <input
                     type="text"
                     name="todo"
                     placeholder="Enter Todo"
                     required
                 />
-                <button type="submit">Add todos</button>
+                <button class="button" type="submit">Add todos</button>
             </form>
         </div>
         <div class="footer"></div>
