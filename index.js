@@ -32,16 +32,15 @@ app.get('/', function (req, res) {
 });
 
 app.post('/create-todos', function (req, res) {
+    req.body.index = indexNo++;
     todosList.push(req.body);
     console.log(req.body);
     console.log(todosList);
-
-    indexNo++;
     return res.redirect('back');
 });
 
-app.get('/delete-todos', function (req, res) {
-    let todos_index = todosList.query.index;
+app.get('/delete-todos/', function (req, res) {
+    let todos_index = req.query.index;
     let todos_delete_index = todosList.findIndex(
         (todos_list_item) => todos_list_item.index == todos_index
     );
