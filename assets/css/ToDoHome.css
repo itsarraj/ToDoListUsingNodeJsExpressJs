@@ -226,3 +226,24 @@ input:focus {
         padding: 1rem 2rem;
     }
 }
+
+
+.ToDo-Head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+    border: 1px solid #0f0f0f;
+    border-radius: 1.5rem;
+
+    color: #fff;
+
+    font-family: 'Basier circle', -apple-system, system-ui, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+}
